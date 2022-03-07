@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <rosparam command="load" file="$(find bd_bringup)/config/teleop_control.yaml" />
+  <node pkg="joy" type="joy_node" name="joy_node"/>
+  <node pkg="teleop_twist_joy" type="teleop_node" name="teleop_twist_joy"/>
+</launch>

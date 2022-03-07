@@ -1,0 +1,9 @@
+<launch>
+    
+    <!-- Rosserial for motor driver -->   
+  <node pkg="rosserial_python" type="serial_node.py" name="hunter_rosserial" output="screen" >
+    <param name="port" value="/dev/ttyUSB0" />
+  </node>
+  
+
+</launch>
